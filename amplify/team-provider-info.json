@@ -1,0 +1,19 @@
+{
+    "ampprac": {
+        "awscloudformation": {
+            "AuthRoleName": "amplifypractice-20190219153540-authRole",
+            "UnauthRoleArn": "arn:aws:iam::668608624322:role/amplifypractice-20190219153540-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::668608624322:role/amplifypractice-20190219153540-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplifypractice-20190219153540-deployment",
+            "UnauthRoleName": "amplifypractice-20190219153540-unauthRole",
+            "StackName": "amplifypractice-20190219153540",
+            "StackId": "arn:aws:cloudformation:us-east-2:668608624322:stack/amplifypractice-20190219153540/afac1560-3496-11e9-8fc7-0a7dfa8cb208"
+        },
+        "categories": {
+            "auth": {
+                "cognitoe1517e2b": {}
+            }
+        }
+    }
+}
