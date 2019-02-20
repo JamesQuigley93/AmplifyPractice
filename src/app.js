@@ -1,12 +1,14 @@
-import Auth from '@aws-amplify/auth';
+import Amplify, { Auth } from 'aws-amplify';
 import Analytics from '@aws-amplify/analytics';
-
+import awsmobile from './aws-exports';
 import awsconfig from './aws-exports';
 
 // retrieve temporary AWS credentials and sign requests
 Auth.configure(awsconfig);
 // send analytics events to Amazon Pinpoint
 Analytics.configure(awsconfig);
+
+Amplify.configure(awsmobile);
 
 const AnalyticsResult = document.getElementById('AnalyticsResult');
 const AnalyticsEventButton = document.getElementById('AnalyticsEventButton');
@@ -20,3 +22,5 @@ AnalyticsEventButton.addEventListener('click', (evt) => {
             AnalyticsResult.innerHTML += '<a href="'+url+'" target="_blank">View Events on the Amazon Pinpoint Console</a>';
         });
 });
+
+
